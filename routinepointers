@@ -1,0 +1,9 @@
+
+## Script Commands
+ScrCmd_createvobject 0815FC5C
+ScrCmd_turnvobject 0815FC60
+
+## Specials
+sp06A_DestroyVSprite 0815FF08
+sp06B_DestroyAllVSprites 0815FF0C
+

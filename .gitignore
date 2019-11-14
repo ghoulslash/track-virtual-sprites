@@ -1,0 +1,12 @@
+notes.txt
+*.gba
+*.sav
+*.sgm
+build/*
+*.gif
+*.png
+*.jpg
+*.bak
+scripts/__pychache__/*
+generatedrepoints
+offsets.txt

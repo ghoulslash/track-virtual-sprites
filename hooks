@@ -1,0 +1,10 @@
+#SpawnVSpritesWithOverworld 08056578 0
+
+# Re-spawn virtual sprites on warp
+mapldr_default 0807DF64 0
+
+# Re-spawn virtual sprites after battle/menu closing
+CB2_ReturnToFieldLocal 08056808 0
+
+CreateVSpriteNPC 0811BB08 0
+SaveSpriteId 0805EA78 1
