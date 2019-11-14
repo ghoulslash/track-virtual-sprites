@@ -12,14 +12,6 @@
 #include "../include/overworld.h"
 #include "../include/palette.h"
 
-// gSaveBlock1Ptr -> /*0x3A94*/ struct VirtualSprites vSpriteData;
-//gSaveBlock1Ptr->vSpriteData
-#define FLAG_KEEP_V_SPRITES 0x26E
-
-
-#define vSpriteTableRam *((u8*) 0x203e058)
-
-
 #define V_SPRITE_COUNT 20
 struct vSpriteData {
 	/*0x0*/ u16 owNum;	//[table][sprite]
@@ -37,5 +29,12 @@ struct VirtualSprites {
 }; //size 160 bytes
 
 
+/*===========================*/
+//	CUSTOMIZATION
+/*===========================*/
+// flag that, if set, keeps virtual sprites on the map
+#define FLAG_KEEP_V_SPRITES 0x26E
+
+// new, .sav compatable RAM for your virtual sprite data (total 161 bytes needed)
 #define gVirtualSpriteCount (*((u8*) 0x203c8ff))
 #define gVirtualSprites ((struct VirtualSprites*) 0x203c900)
